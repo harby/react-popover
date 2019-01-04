@@ -1,4 +1,4 @@
-const isServer = typeof window === "undefined"
+const isServer = typeof window === "undefined" || typeof document === "undefined"
 const isClient = !isServer
 const WINDOW = isClient ? window : null
 const DOCUMENT = isClient ? document : null
